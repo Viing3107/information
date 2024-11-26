@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    user-select: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    /* background: #005AA7;
+    background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);
+    background: linear-gradient(to right, #FFFDE4, #005AA7); */
+    background: #4e54c8;
+    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);
+    background: linear-gradient(to right, #8f94fb, #4e54c8);
+}
+
+.header {
+    padding-top: 5rem;
+}
+
+.header h1 {
+    font-size: 3rem;
+    padding-left: 5%;
+    font-family: Consolas, sans-serif;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.information {
+    height: 500px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.7);
+}
+
+.information .content {
+    font-size: 2rem;
+    max-width: 60vw;
+    font-family: Montserrat;
+    font-weight: 500;
+    /* background-color: blue; */
+    text-align: center;
+    margin: 7.5px;
+}
+
+.information img {
+    height: 30vw;
+    display: block;
+    margin: 7.5px;
+    /* background-color: red; */
+}
+
+.nav {
+    font-family: Jetbrains Mono;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.nav .head {
+    border: 2px solid black;
+    padding: 15px;
+    margin: 20px;
+    background-image: -webkit-linear-gradient(to right, #757F9A 0%, #D7DDE8  51%, #757F9A  100%);
+    background-image: linear-gradient(to right, #757F9A 0%, #D7DDE8  51%, #757F9A  100%);
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+}
+
+.nav .body {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.nav .body i {
+    padding: 5px;
+}
+
+.nav .body a {
+    margin: 10px;
+    width: 150px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+}
+
+.nav .body a:hover {
+    background-position: right center;
+    color: #fff;
+    box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff;
+    transition: all 0.5s ease;
+}
+
+.facebook {
+    background-image: -webkit-linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+}
+
+.tiktok {
+    background-image: -webkit-linear-gradient(to right, #3A1C71 0%, #D76D77  51%, #3A1C71  100%);
+    background-image: linear-gradient(to right, #3A1C71 0%, #D76D77  51%, #3A1C71  100%);
+}
+
+.vnoi {
+    background-image: -webkit-linear-gradient(to right, #000000 0%, #434343  51%, #000000  100%);
+    background-image: linear-gradient(to right, #000000 0%, #434343  51%, #000000  100%);
+}
+
+.other {
+    background-image: -webkit-linear-gradient(to right, #757F9A 0%, #D7DDE8  51%, #757F9A  100%);
+    background-image: linear-gradient(to right, #757F9A 0%, #D7DDE8  51%, #757F9A  100%);
+}
+
+footer .copyright {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    font-family: Roboto;
+    border-top: 2px solid #000;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+strong {
+    font-weight: 600;
+}
+
+/* Support Laptop/Destop/PC */
+@media screen and (max-width: 1000px) { 
+    .information {
+        flex-direction: column-reverse;
+    }
+
+    .information .content {
+        max-width: 100%;
+    }
+
+    .information img {
+        height: 300px;
+    }
+}
+
+/* Support Iphone 14/Pro/Pro Max */
+@media screen and (max-width: 430px) {
+    .information {
+        width: 80%;
+    }
+
+    .information img {
+        height: 210px;
+    }
+
+    footer .copyright {
+        font-size: 1rem;
+    }
+}
+
+/* Support Iphone 12/Pro/Pro Max */
+@media screen and (max-width: 390px) {
+    .information img {
+        height: 200px;
+    }
+}
+
+/* Support Ipad */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (max-height: 1400px) {
+    footer .copyright {
+        position: absolute;
+        bottom: 0;
+    }
+}
